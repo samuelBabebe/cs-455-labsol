@@ -10,5 +10,3 @@ let myself = {
     hobbies: ["violin", "cooking"],
     bankaccount: bankaccount
 };
-myself.bankaccount.deposit(3000); 
-console.log(myself);
