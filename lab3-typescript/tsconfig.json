@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "ES2015",
+            "dom"
+
+        ],
+        "module": "commonjs",
+        "outDir": "lab3ans",
+        "target": "ES2015",
+        "strict": true,
+
+    },
+    // "include": [
+    //     "lab3-typescript"
+
+    //]
+}
