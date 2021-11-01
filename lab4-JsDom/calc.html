@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        input{
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class=" container">
+        <label for="first">first input</label><br>
+        <input type="text" placeholder="enter the first number" id="first"><br>
+        <label for="second">second input</label><br>
+        <input type="text" placeholder="enter the second number" id="second"><br>
+        <label for="third">fesult</label><br>
+        <input type="text" placeholder="result" id="third"><br>
+
+        <button type="button" id="calc">calculate</button>
+    </div>
+    <script>
+        document.getElementById("calc").onclick = function(){
+          
+            document.getElementById("third").value= parseFloat(document.getElementById("first").value) + parseFloat(document.getElementById("second").value)
+            console.log(document.getElementById("third").innerHTML)
+        }
+    </script>
+    
+</body>
+</html>

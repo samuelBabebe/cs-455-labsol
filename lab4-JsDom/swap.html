@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWap</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        img{
+            width: 20%;
+            margin: 2%;
+        }
+        button{
+            background-color: black;
+            color: white;
+            width: 5%px;
+            margin-left: 19%;
+            height: 3%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <img src="Baby-Second-Sean-Crane-1024x731.jpg" alt="swap1" id="img1">
+    <img src="photo-1508558936510-0af1e3cccbab.jpg"alt="swap2" id="img2">
+    
+    </div>
+    <button type="button" id="swapbutton">SWAP</button>
+    <script>
+        window.onload =function(){
+            document.getElementById("swapbutton").onclick = function(){
+                let swap = document.getElementById("img1").src
+                document.getElementById("img1").src = document.getElementById("img2").src
+                document.getElementById("img2").src = swap;
+                
+            }
+        }
+    </script>
+</body>
+</html>
